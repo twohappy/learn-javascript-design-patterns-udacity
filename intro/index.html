@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wrap {
+            width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <img src="img/kitty.jpg" alt="" id="kitty">
+    <span id="times"></span>
+</div>
+<script>
+    (function () {
+        var clickTimes = 0;
+        var kitty = document.querySelector('#kitty');
+        var times = document.querySelector('#times');
+        kitty.addEventListener('click', function () {
+            clickTimes++;
+            console.log(clickTimes);
+            times.innerHTML = clickTimes;
+        })
+    })();
+</script>
+</body>
+</html>
