@@ -1,6 +1,7 @@
 /**
  * Created by twohappy on 2016/12/20.
  */
+//课程里面的代码看了以后,这版程序写的还是有点overplay.
 ;(function(){
     var cats = [
         {
@@ -81,7 +82,7 @@
             listView.init(listEl);
             catView.init(catEl);
         }
-    }
+    };
 
 
     var listView = {
@@ -101,7 +102,6 @@
                 octopus.changeCat(catName);
             });
         }
-
     };
 
     var catView = {
