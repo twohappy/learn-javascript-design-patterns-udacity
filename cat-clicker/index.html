@@ -10,7 +10,22 @@
 <body>
 <div>
     <ul id="catList" class="catList"></ul>
-    <div id="catShow" class="catShow"></div>
+    <div id="catShow" class="catShow">
+        <div id="cat">
+            <h2 id="cat-name"></h2>
+            <div id="cat-count"></div>
+            <img id="cat-img" src="" alt="cute cat">
+        </div>
+        <br>
+        <input type="button" value="modify this cat!" id="mBtn">
+        <div id="modify">
+            <input type="text" placeholder="Please input new cat's name" id="newName">
+            <input type="text" placeholder="Please input new cat pic's url" id="newUrl">
+            <input type="button" value="cancel" id="cancel">
+            <input type="button" value="ok" id="ok">
+        </div>
+    </div>
+
 </div>
 <script src="app.js"></script>
 
